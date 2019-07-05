@@ -2,10 +2,7 @@
   <div class="home">
     <SHeader title="Header" />
     <div>Index</div>
-    <!-- <SFooter :tabindex="0"/> -->
-    <SFooter custom>
-      <div>内容</div>
-    </SFooter>
+    <SFooter :tabindex="0"/>
   </div>
 </template>
 

@@ -27,20 +27,20 @@ export default {
       navBar: [
         {
           path: "/",
-          icon: require("ASSET/bottomBar/Yun.png"), 
-          icon_active: require("ASSET/bottomBar/Yun_active.png"),
+          icon: require("ASSET/images/bottomBar/Yun.png"), 
+          icon_active: require("ASSET/images/bottomBar/Yun_active.png"),
           name: "Yun"
         },
         {
           path: "/Apple",
-          icon: require("ASSET/bottomBar/Apple.png"), 
-          icon_active: require("ASSET/bottomBar/Apple_active.png"),
+          icon: require("ASSET/images/bottomBar/Apple.png"), 
+          icon_active: require("ASSET/images/bottomBar/Apple_active.png"),
           name: "Apple"
         },
         {
           path: "/Android",
-          icon: require("ASSET/bottomBar/Android.png"), 
-          icon_active: require("ASSET/bottomBar/Android_active.png"),
+          icon: require("ASSET/images/bottomBar/Android.png"), 
+          icon_active: require("ASSET/images/bottomBar/Android_active.png"),
           name: "Android"
         }
       ]
