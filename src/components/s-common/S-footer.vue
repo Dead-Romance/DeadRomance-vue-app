@@ -85,7 +85,7 @@ export default {
         -webkit-tap-highlight-color: transparent; // 谁知a标签选中背景为透明
       }
       .active {
-        color: #ff6347;
+        color: #07c160;
       }
     }
   }

@@ -10,6 +10,10 @@
 // 子页面存放数组中
 const CHILRENROUTER = [ /** homeC, userC */ ]
 
+/**
+ * @param { keepAlive : 是否缓存 (true / false) } 
+ */ 
+
 // 主页面配置
 const config = [{
         path: '/Index',
@@ -17,7 +21,10 @@ const config = [{
     }, {
         name: 'Index',
         path: '/',
-        component: () => import('../views/Yun.vue')
+        component: () => import('../views/Yun.vue'),
+        meta: {
+            keepAlive: true 
+        }
     },
     {
         name: 'Apple',

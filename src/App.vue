@@ -1,7 +1,12 @@
 <template>
   <div id="app">
     <div ref="SContainer" class="SContainer">
-      <router-view />
+      <!-- 开启缓存页面 -->
+      <keep-alive>
+        <router-view v-if="$route.meta.keepAlive" />
+      </keep-alive>
+      <!-- 取消缓存页面 -->
+      <router-view v-if="!$route.meta.keepAlive" />
     </div>
   </div>
 </template>

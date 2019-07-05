@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-// import * as routes from './router'
+// 路由拦截器
+import routerIntercep from './intercep'
+// 路由组件
 import config from './router'
 
 Vue.use(Router)
@@ -12,9 +14,8 @@ const router = new Router({
     routes: config,
 })
 
-router.beforeEach((to, from, next) => {
-    next()
-})
+// 路由拦截器
+routerIntercep(router)
 
 
 export default router
