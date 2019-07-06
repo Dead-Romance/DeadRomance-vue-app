@@ -1,7 +1,7 @@
 <template>
   <div>
     <SHeader title="Android" />
-    <div>Android</div>
+    <SContainer>Android</SContainer>
     <SFooter :barIndex="2"></SFooter>
   </div>
 </template>

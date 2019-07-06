@@ -1,7 +1,7 @@
 <template>
   <div>
     <SHeader title="Apple" />
-    <div>Apple</div>
+    <SContainer>Apple</SContainer>
     <SFooter :barIndex="1"></SFooter>
   </div>
 </template>
