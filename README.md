@@ -181,4 +181,22 @@ export default {
 |  click-tabBar | 点击当前标签触发  |  - | 
 
 
+#### 容器组件
+`S-Container`
+
+##### 代码演示
+```
+<S-Container noFooter noHeader/>
+
+```
+
+##### api
+> Props
+
+|  参数 |  说明 |  	类型 | 默认值  | 版本  |
+| ------------ | ------------ | ------------ | ------------ | ------------ |
+|  noHeader | 取消头部还原头部距离  |  `Boolean` | `false`  | -  |
+|  noFooter | 取消底部还原底部距离  |  `Boolean` | `false`  | -  |
+
+
 ---------------------
