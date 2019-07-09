@@ -1,6 +1,10 @@
 import Vue from 'vue'
 
 
+//  Vue自定义指令
+
+
+
 
 // 头部区域
 import SHeader from "../components/s-common/S-header.vue";

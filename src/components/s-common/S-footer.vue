@@ -46,6 +46,7 @@ export default {
       ]
     };
   },
+
   methods:{
     onClickTabBar() {
       this.$emit('click-tabBar')

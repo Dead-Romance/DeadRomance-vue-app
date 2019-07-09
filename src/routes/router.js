@@ -53,6 +53,7 @@ export default config.concat([...handleArrRoute(CHILRENROUTER)], error)
 
 
 
+
 // 处理子路由添加 router 格式
 function handleArrRoute(array) {
     let nullArr = []

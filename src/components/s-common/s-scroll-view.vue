@@ -1,18 +1,21 @@
 <template>
-  <div :class="SScrollClassObj">
+  <div :class="SScrollClassObj" ref="SScrollView">
     <slot></slot>
   </div>
 </template>
 
 <script>
+import iosScroll from "UTIL/iosScroll";
 export default {
   props: {
     scroll: {
       type: String,
       default: ""
-    },
+    }
   },
-
+  mounted() {
+    iosScroll(this.$refs.SScrollView);
+  },
   computed: {
     SScrollClassObj: function() {
       let y = this.scroll.toLocaleLowerCase() == "y" ? true : false;
@@ -23,7 +26,7 @@ export default {
         scrollY: y,
         scrollX: x
       };
-    },
+    }
     // SScrollStyleObj: function() {
     //   return {
     //       height: this.height + 'px'
@@ -49,5 +52,4 @@ export default {
   -webkit-overflow-scrolling: touch;
   display: flex;
 }
-
 </style>

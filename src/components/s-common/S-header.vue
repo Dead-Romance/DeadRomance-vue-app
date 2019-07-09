@@ -8,7 +8,9 @@
         </slot>
       </div>
       <div class="title">
-        <span>{{title}}</span>
+        <slot name="title">
+          <span v-if="title">{{title}}</span>
+        </slot>
       </div>
 
       <div id="right" @click="onClickRight">
