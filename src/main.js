@@ -6,7 +6,7 @@ Vue.config.productionTip = false
 
 
 import Vconsole from 'vconsole'
-const vConsole = new Vconsole()
+// const vConsole = new Vconsole()
 
 import './utils/rem' // 适配
 import './css/reset.css' // 初始化

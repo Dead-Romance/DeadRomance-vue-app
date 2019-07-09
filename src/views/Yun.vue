@@ -1,6 +1,12 @@
 <template>
   <div class="home">
-    <SHeader title="Header" />
+    <SHeader>
+      <span slot="left">左边</span>
+      <div class="search-title" slot="title">
+        <input type="text" placeholder="请输入关键字">
+      </div>
+      <span slot="right">右边</span>
+    </SHeader>
 
     <SContainer >
       <ul>

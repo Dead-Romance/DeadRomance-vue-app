@@ -1,5 +1,6 @@
 <template>
   <div class="S-footer">
+    <slot></slot>
     <ul v-if="!custom">
       <li v-for="(item,index) in navBar" :key="index" @click="onClickTabBar">
         <img :src=" barIndex == index ? item.icon_active : item.icon" class="fot-icon" />
@@ -29,20 +30,26 @@ export default {
           path: "/",
           icon: require("ASSET/images/bottomBar/Yun.png"), 
           icon_active: require("ASSET/images/bottomBar/Yun_active.png"),
-          name: "Yun"
+          name: "首页"
         },
         {
           path: "/Apple",
           icon: require("ASSET/images/bottomBar/Apple.png"), 
           icon_active: require("ASSET/images/bottomBar/Apple_active.png"),
-          name: "Apple"
+          name: "分类"
         },
         {
           path: "/Android",
           icon: require("ASSET/images/bottomBar/Android.png"), 
           icon_active: require("ASSET/images/bottomBar/Android_active.png"),
-          name: "Android"
-        }
+          name: "购物车"
+        },
+         {
+          path: "/Android",
+          icon: require("ASSET/images/bottomBar/Android.png"), 
+          icon_active: require("ASSET/images/bottomBar/Android_active.png"),
+          name: "我的"
+        },
       ]
     };
   },
@@ -77,12 +84,13 @@ export default {
       height: 100%;
       padding-top: 5px;
       .fot-icon {
-        width: 25px;
-        height: 25px;
+        width: 30px;
+        height: 30px;
       }
       a {
-        line-height: initial;
         color: #333;
+        font-size: 10px;
+        line-height: initial;
         -webkit-tap-highlight-color: transparent; // 谁知a标签选中背景为透明
       }
       .active {
