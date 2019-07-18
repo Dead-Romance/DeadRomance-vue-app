@@ -3,7 +3,7 @@ import axios from 'axios'
 
 
 let instance = axios.create({
-    baseURL: 'https://whby666.com/api/', // 接口域名
+    // baseURL: 'https://whby666.com/api/', // 接口域名
     timeout: 5000, // 超时时间
     headers: { // 设置请求头
         'Content-Type': 'application/json'
@@ -63,17 +63,13 @@ export function apiGet(url, options = {}) {
  * @param { 失败回调: options.fail} 
  */
 export function apiPost(url, options = {}) {
-    if (options.params === undefined) options.params = {}
-
-    return instance.post(url, options.params).then((res) => {
-        options.success(res)
+    if (options.data === undefined) options.data = {}
+    return instance.post(url, options.data).then((res) => {
+        options.success(res.data)
     }).catch((err) => {
         options.fail(err)
     });
 }
 
 
-Vue.apiGet = apiGet
-Vue.apiPost = apiPost
-Vue.prototype.apiGet = apiGet
-Vue.prototype.apiPost = apiPost
+

@@ -11,9 +11,7 @@
 <script>
 export default {
   mounted() {
-    // var f = document.querySelector('.S-footer')
-    // console.log(f)
-  },
+  }
 };
 </script>
 

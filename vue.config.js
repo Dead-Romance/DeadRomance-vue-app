@@ -6,7 +6,7 @@ function resolve(dir) {
 }
 
 module.exports = {
-    // 选项...
+    // 选项... 
     publicPath: process.env.NODE_ENV === 'production' ? './' : './', // 根路径
     outputDir: 'dist', // 构建输出目录
     assetsDir: 'assets', // 静态资源目录(js,css,img,fonts)
@@ -15,7 +15,7 @@ module.exports = {
         open: true, //  自动打开浏览器
         host: '0.0.0.0', // 主机名, 真机测试: 0.0.0
         port: 3333, // 端口号
-        https: false,
+        https: false, 
         hotOnly: true, // 模块热更新
         proxy: 'http://locahost:8081/api/', // 跨域
         proxy: {
