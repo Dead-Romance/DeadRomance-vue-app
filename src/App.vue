@@ -1,6 +1,6 @@
 <template>
   <div id="app" ref="app">
-    <!-- 开启缓存页面 -->
+    <!-- 开启缓存页面·222 -->
     <keep-alive>
       <router-view v-if="$route.meta.keepAlive" />
     </keep-alive>
